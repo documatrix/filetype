@@ -222,7 +222,7 @@ func Xml(buf []byte) bool {
 	return len(buf) > 7 &&
 		buf[0] == 0x3C &&
 		buf[1] == 0x3F &&
-		(buf[1] == 0x78 || buf[1] == 0x58) &&
-		(buf[2] == 0x6D || buf[2] == 0x4D) &&
-		(buf[3] == 0x6C || buf[3] == 0x4C)
+		(buf[2] == 0x78 || buf[2] == 0x58) &&
+		(buf[3] == 0x6D || buf[3] == 0x4D) &&
+		(buf[4] == 0x6C || buf[4] == 0x4C)
 }
